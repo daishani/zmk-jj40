@@ -19,7 +19,7 @@
             bindings = <
 &kp DEL   &kp N1  &kp N2  &kp N3  &kp KP_DOT  &trans             &trans           &trans  &kp RSHFT  &kp MINUS  &kp EQUAL  &kp GRAVE
 &kp CAPS  &kp N4  &kp N5  &kp N6  &kp N0      &trans             &trans           &trans  &kp RSHFT  &kp LBKT   &kp RBKT   &kp BSLH
-&trans    &kp N7  &kp N8  &kp N9  &trans      &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &trans  &kp RSHFT  &kp SEMI   &kp APOS   &kp RSHFT
+&trans    &kp N7  &kp N8  &kp N9  &trans      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &kp RSHFT  &kp SEMI   &kp APOS   &kp RSHFT
 &trans    &trans  &trans  &trans  &trans      &trans             &trans           &trans  &trans     &trans     &trans     &trans
             >;
         };
@@ -28,7 +28,7 @@
             bindings = <
 &kp ESC    &kp N1    &kp N2    &kp N3  &kp KP_DOT  &trans             &trans           &kp PG_DN  &kp UP    &kp PG_UP  &trans    &soft_off
 &kp TAB    &kp N4    &kp N5    &kp N6  &kp N0      &trans             &kp END          &kp LEFT   &kp DOWN  &kp RIGHT  &kp HOME  &trans
-&kp LSHFT  &kp N7    &kp N8    &kp N9  &trans      &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &trans     &trans    &trans     &trans    &trans
+&kp LSHFT  &kp N7    &kp N8    &kp N9  &trans      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans     &trans    &trans     &trans    &trans
 &kp LCTRL  &kp LGUI  &kp LALT  &trans  &trans      &trans             &trans           &trans     &trans    &trans     &trans    &trans
             >;
         };
@@ -39,15 +39,6 @@
 &kp TAB    &kp F5    &kp F6    &kp F7   &kp F8   &trans  &trans  &trans  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR    &bootloader
 &kp LSHFT  &kp F9    &kp F10   &kp F11  &kp F12  &trans  &trans  &trans  &trans        &trans        &trans        &trans
 &kp LCTRL  &kp LGUI  &kp LALT  &trans   &trans   &trans  &trans  &trans  &trans        &trans        &trans        &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
