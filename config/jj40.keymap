@@ -1,22 +1,45 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 
 / {
-
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&lt 3 ESC  &kp Q     &kp W     &kp E      &kp R        &kp T  &kp Y        &kp U  &kp I            &kp O       &kp P            &kp BACKSPACE
-&lt 2 TAB  &kp A     &kp S     &kp D      &kp F        &kp G  &kp H        &kp J  &kp K            &kp L       &lt 2 SEMICOLON  &kp ENTER
-&kp LSHFT  &kp Z     &kp X     &kp C      &kp V        &kp B  &kp N        &kp M  &lt 4 COMMA      &kp RCTRL   &kp UP_ARROW     &kp RSHIFT
-&kp LCTRL  &kp LGUI  &kp LALT  &lt 2 TAB  &lt 1 SPACE  &none  &lt 1 SPACE  &none  &lt 2 BACKSPACE  &lt 3 LEFT  &kp DOWN         &kp RIGHT
+&lt 3 ESC  &kp Q     &kp W     &kp E     &kp R        &kp T        &kp Y        &kp U        &kp I      &kp O     &kp P     &kp BACKSPACE
+&kp TAB    &kp A     &kp S     &kp D     &kp F        &kp G        &kp H        &kp J        &kp K      &kp L     &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z     &kp X     &kp C     &kp V        &kp B        &kp N        &kp M        &kp COMMA  &kp DOT   &kp FSLH  &kp ENTER
+&kp LCTRL  &kp LGUI  &kp LALT  &kp CAPS  &lt 1 SPACE  &lt 1 SPACE  &lt 2 SPACE  &lt 2 SPACE  &kp UP     &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };
 
+        layer_1 {
+            bindings = <
+&kp DEL   &kp N1  &kp N2  &kp N3  &kp KP_DOT  &trans             &trans           &trans  &kp RSHFT  &kp MINUS  &kp EQUAL  &kp GRAVE
+&kp CAPS  &kp N4  &kp N5  &kp N6  &kp N0      &trans             &trans           &trans  &kp RSHFT  &kp LBKT   &kp RBKT   &kp BSLH
+&trans    &kp N7  &kp N8  &kp N9  &trans      &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &trans  &kp RSHFT  &kp SEMI   &kp APOS   &kp RSHFT
+&trans    &trans  &trans  &trans  &trans      &trans             &trans           &trans  &trans     &trans     &trans     &trans
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&kp ESC    &kp N1    &kp N2    &kp N3  &kp KP_DOT  &trans             &trans           &kp PG_DN  &kp UP    &kp PG_UP  &trans    &soft_off
+&kp TAB    &kp N4    &kp N5    &kp N6  &kp N0      &trans             &kp END          &kp LEFT   &kp DOWN  &kp RIGHT  &kp HOME  &trans
+&kp LSHFT  &kp N7    &kp N8    &kp N9  &trans      &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &trans     &trans    &trans     &trans    &trans
+&kp LCTRL  &kp LGUI  &kp LALT  &trans  &trans      &trans             &trans           &trans     &trans    &trans     &trans    &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&kp ESC    &kp F1    &kp F2    &kp F3   &kp F4   &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &soft_off
+&kp TAB    &kp F5    &kp F6    &kp F7   &kp F8   &trans  &trans  &trans  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR    &bootloader
+&kp LSHFT  &kp F9    &kp F10   &kp F11  &kp F12  &trans  &trans  &trans  &trans        &trans        &trans        &trans
+&kp LCTRL  &kp LGUI  &kp LALT  &trans   &trans   &trans  &trans  &trans  &trans        &trans        &trans        &trans
+            >;
+        };
     };
 };
