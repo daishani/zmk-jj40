@@ -1,0 +1,22 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
+
+/ {
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+&lt 3 ESC  &kp Q     &kp W     &kp E      &kp R        &kp T  &kp Y        &kp U  &kp I            &kp O       &kp P            &kp BACKSPACE
+&lt 2 TAB  &kp A     &kp S     &kp D      &kp F        &kp G  &kp H        &kp J  &kp K            &kp L       &lt 2 SEMICOLON  &kp ENTER
+&kp LSHFT  &kp Z     &kp X     &kp C      &kp V        &kp B  &kp N        &kp M  &lt 4 COMMA      &kp RCTRL   &kp UP_ARROW     &kp RSHIFT
+&kp LCTRL  &kp LGUI  &kp LALT  &lt 2 TAB  &lt 1 SPACE  &none  &lt 1 SPACE  &none  &lt 2 BACKSPACE  &lt 3 LEFT  &kp DOWN         &kp RIGHT
+            >;
+        };
+
+    };
+};
