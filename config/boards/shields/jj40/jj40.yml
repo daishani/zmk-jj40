@@ -1,0 +1,8 @@
+file_format: "1"
+id: JJ40
+name: JJ40
+type: shield
+url: https://github.com/
+requires: [pro_micro]
+features:
+  - keys
